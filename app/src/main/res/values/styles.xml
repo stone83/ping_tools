@@ -1,0 +1,110 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowAnimationStyle">@style/ActivityAnimTheme</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="AppBaseTheme_NoTitleBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/ActivityAnimTheme</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme_NoTitleBar" />
+    <style name="AppTheme_TitleBar" parent="AppBaseTheme" />
+    <style name="SplashAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="custom_progressbar_activity" parent="AppTheme">
+        <item name="android:windowFrame">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnimTheme</item>
+    </style>
+    <style name="custom_permissions_activity" parent="custom_progressbar_activity">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="custom_not_touch_modal_activity" parent="custom_permissions_activity">
+
+    </style>
+    <style name="custom_alter_dialog_style" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@android:color/transparent</item>
+        <!-- 控制各个控件被选中时的颜色 -->
+        <item name="colorAccent">@color/all_background</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textSize">14sp</item>
+      <!--  <item name="android:width">310dip</item> -->
+    </style>
+
+    <style name="custom_horizontal_progressbar" parent="Base.Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/horizontal_progress_bar</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!--<style name="custom_checkbox_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:button">@drawable/checkbox_selected</item>
+    </style>-->
+    <style name="custom_checkbox_style_all" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:focusable">false</item>
+        <item name="android:button">@drawable/checkbox_style_all</item>
+    </style>
+    <style name="custom_view">
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:paddingBottom">0dip</item>
+    </style>
+    <style name="custom_imageview_fitxy" parent="custom_view">
+        <item name="android:adjustViewBounds">true</item>
+        <!--<item name="android:scaleType">fitXY</item>-->
+        <!--<item name="android:background">@drawable/custom_imageview_fitxy</item>-->
+    </style>
+    <style name="ActivityAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenExitAnimation">@anim/out_from_left</item>
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_from_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_from_right</item>
+    </style>
+
+    <style name="custom_alter_dialog_style_fullscreen_style">
+        <!-- 如果不是透明背景,背景为color,覆盖整个屏幕,不能看到帧动画效果,也不能看到窗体后面的界面.
+         如果不是透明背景,背景为drawable,覆盖整个屏幕,能看到帧动画效果,也能看到窗体后面的界面.
+         如果是透明背景,能看到帧动画效果,也能看到窗体后面的界面.-->
+        <item name="android:windowFrame">@android:color/transparent</item>
+        <!-- 如果不是透明背景,背景为color,没有覆盖的效果,能看到帧动画效果,也能看到窗体后面的界面.
+         如果不是透明背景,背景为drawable,覆盖整个屏幕,能看到帧动画效果,也能看到窗体后面的界面.
+         如果是透明背景,能看到帧动画效果,也能看到窗体后面的界面.-->
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        <!-- 如果不是透明背景,背景为color,覆盖整个屏幕,能看到帧动画效果,不能看到窗体后面的界面.
+         如果不是透明背景,背景为drawable,覆盖整个屏幕,能看到帧动画效果,也能看到窗体后面的界面.
+         如果是透明背景,能看到帧动画效果,也能看到窗体后面的界面.-->
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 如果不是透明背景,背景为color,覆盖整个屏幕,能看到帧动画效果,不能看到窗体后面的界面.
+         如果不是透明背景,背景为drawable,覆盖整个屏幕,能看到帧动画效果,也能看到窗体后面的界面.
+         如果是透明背景,能看到帧动画效果,也能看到窗体后面的界面.-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 只有为true才能触摸屏幕关闭对话框 -->
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

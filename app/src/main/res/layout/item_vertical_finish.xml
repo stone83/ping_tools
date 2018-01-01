@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="40dip"
+    android:paddingBottom="40dip">
+    <com.zhy.android.percent.support.PercentLinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/acce_finish"
+        android:layout_width="match_parent"
+        android:layout_height="78dip"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/lable_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+        <ImageView
+            android:id="@+id/img_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            app:layout_paddingLeftPercent="37%sw"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/img_btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/checkbox_selected"
+            android:visibility="invisible"
+            app:layout_paddingLeftPercent="2%sw"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</RelativeLayout>

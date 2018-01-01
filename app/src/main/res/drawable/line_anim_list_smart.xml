@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/smart1" android:duration="70"/>
+    <item android:drawable="@drawable/smart2" android:duration="70"/>
+    <item android:drawable="@drawable/smart3" android:duration="70"/>
+    <item android:drawable="@drawable/smart4" android:duration="70"/>
+    <item android:drawable="@drawable/smart5" android:duration="70"/>
+    <item android:drawable="@drawable/smart6" android:duration="70"/>
+    <item android:drawable="@drawable/smart7" android:duration="70"/>
+    <item android:drawable="@drawable/smart8" android:duration="70"/>
+    <item android:drawable="@drawable/smart9" android:duration="70"/>
+    <item android:drawable="@drawable/smart10" android:duration="70"/>
+</animation-list>

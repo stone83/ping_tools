@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/bees1" android:duration="70"/>
+    <item android:drawable="@drawable/bees2" android:duration="70"/>
+    <item android:drawable="@drawable/bees3" android:duration="70"/>
+    <item android:drawable="@drawable/bees4" android:duration="70"/>
+    <item android:drawable="@drawable/bees5" android:duration="70"/>
+    <item android:drawable="@drawable/bees6" android:duration="70"/>
+    <item android:drawable="@drawable/bees7" android:duration="70"/>
+    <item android:drawable="@drawable/bees8" android:duration="70"/>
+    <item android:drawable="@drawable/bees9" android:duration="70"/>
+    <item android:drawable="@drawable/bees10" android:duration="70"/>
+    <item android:drawable="@drawable/bees11" android:duration="70"/>
+    <item android:drawable="@drawable/bees12" android:duration="70"/>
+</animation-list>

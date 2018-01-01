@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:background="@color/title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_heightPercent="7.8125%sh"
+        >
+
+        <ImageView
+            android:id="@+id/img"
+            style="@style/custom_imageview_fitxy"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            app:layout_heightPercent="5.15625%sh"
+            app:layout_maxHeightPercent="5.15625%sh"
+            app:layout_maxWidthPercent="9.16666666666667%sw"
+            app:layout_widthPercent="9.16666666666667%sw"
+            tools:ignore="ContentDescription"/>
+        <!--app:layout_maxHeightPercent="5.15625%sh"
+        app:layout_maxWidthPercent="9.16666666666667%sw"-->
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_marginLeftPercent="1.38888888888889%sw"
+            >
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                app:layout_textSizePercent="1.484375%sh"
+                />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_marginTopPercent="1.09375%sh"
+                >
+
+                <ImageView
+                    android:id="@+id/mIvDownloadSpeed"
+                    style="@style/custom_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/activity_detect_download_speed"
+                    app:layout_heightPercent="0.9375%sh"
+                    tools:ignore="ContentDescription"/>
+
+                <TextView
+                    android:id="@+id/speed_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    app:layout_marginLeftPercent="1.38888888888889%sw"
+                    app:layout_textSizePercent="1.484375%sh"
+                    tools:ignore="RtlHardcoded"/>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/mBtnStop"
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/common_button_tv_color_selector"
+                android:text="@string/activity_detect_stop"
+                android:textColor="@color/white"
+                app:layout_heightPercent="3.4375%sh"
+                app:layout_widthPercent="12.5%sw"
+                tools:ignore="RtlHardcoded"/>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

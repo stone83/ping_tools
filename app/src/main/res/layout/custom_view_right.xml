@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:layout_width="wrap_content"
+                                                     android:layout_height="match_parent"
+                                                     android:gravity="center_vertical"
+                                                     android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/img_dot"
+        style="@style/custom_imageview_fitxy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/img_btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/checkbox_selected"
+        android:visibility="invisible"
+        app:layout_marginLeftPercent="2.77777777777778%sw"
+        tools:ignore="ContentDescription"/>
+    <!--<ImageView
+        android:id="@+id/img_btn_ok"
+        style="@style/custom_imageview_fitxy"
+        android:src="@drawable/checkbox_selected"
+        android:visibility="invisible"
+        app:layout_heightPercent="2.5%sh"
+        app:layout_marginLeftPercent="2.77777777777778%sw"
+        app:layout_maxHeightPercent="2.5%sh"
+        app:layout_maxWidthPercent="4.44444444444444%sw"
+        app:layout_widthPercent="4.44444444444444%sw"/>-->
+
+</com.zhy.android.percent.support.PercentLinearLayout>

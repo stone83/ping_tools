@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppBaseTheme_NoTitleBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/ActivityAnimTheme</item>
+        <!-- 这个TitleBar的背景色,没有用到TitleBar. -->
+        <item name="android:colorPrimary">@color/all_background</item>
+        <!-- 状态栏在代码中完成了 -->
+        <!--<item name="android:statusBarColor">@color/all_background</item>-->
+        <!-- 导入栏在代码中完成了 -->
+        <!--<item name="android:navigationBarColor">@color/navigation_bar_color</item>-->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>
